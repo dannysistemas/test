@@ -7,7 +7,15 @@ echo "El Primer Numero es: ".$num1;
 echo"<br>";
 echo "El Segundo Numero es: ".$num2;
 echo"<br>";
-echo " Tipo de operacion es: ".$opera;
+if ($opera == 1) 
+  echo " Tipo de operacion es: Suma";    
+    else if($opera == 2)
+    echo " Tipo de operacion es: Resta"; 
+        else if($opera == 3)
+        echo " Tipo de operacion es: Multiplicacion";
+          else
+          echo " Tipo de operacion es: Divicion"; 
+
 echo"<br>";
 
 if ($opera == 1) 
