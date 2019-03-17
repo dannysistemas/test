@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Calculadora</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <form action="calculadora.php" target="_BLANK" method="POST">
+        <CEnter>
+            <B><H2>CALCULADORA</H2><br><H2><b>BASICA</b>
+            </H2>
+            </B>
+        </CEnter>
+        <center>
+
+            <table aling="center" border="2">
+
+                <tr>
+                    <td bgcolor="#183E26"><b>Primer Numero :</b>
+                        <font color="red">*</font>
+                    </td>
+                    <td bgcolor="#fbfbfb"><b><input type="number" placeholder="0" name="n1" minlength="5" maxlength="30" pattern="[0,9]{4-16}"  required></b></td>
+                </tr>
+                <tr>
+                    <td bgcolor="#183E26"><b>Segundo Numero :</b>
+                        <font color="red">*</font>
+                    </td>
+                    <td bgcolor="#fbfbfb"><b><input type="number" placeholder="0" name="n2" minlength="5" maxlength="30" pattern="[0,9]{4-16}"  required></b></td>
+                </tr>
+                <tr>
+                    <td bgcolor="#183E26"><b>Tipo de Operacion :</b>
+                        <font color="red">*</font>
+                    </td>
+                    <td bgcolor="#fbfbfb"><select name="Tipo_op">
+                                <option value="1">SUMA</option>
+                                <option value="2">RESTA</option>
+                                <option value="3">MULTIPLICACION</option>
+                                <option value="4">DIVICION</option>
+                            </select></td>
+                </tr>
+                <td colspan="2"><br>
+                    <center><input type="submit" value="CALCULAR"></center><br>
+                    <center><input type="submit" value="BORRAR"></center><br>
+
+                </td>
+
+            </table>
+        </center>
+    </form>
+
+</body>
+
+</html>
