@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<style>
+    input:valid {
+        background: green
+    }
+    
+    input :invalid {
+        background: red;
+    }
+</style>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Formulario de registro</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/ico" media="screen" href="icons/3d-glasses.png">
+    <script src="main.js"></script>
+</head>
+
+<body bgcolor="#f0f0f0">
+    <form name="form3" action="validar2.php" target="_BLANK" method="POST">
+
+        <center>
+            <table aling="center">
+                <tr bgcolor="#52a8ce">
+                    <td colspan="4">
+                        <CEnter>
+                            <B><H2>FORMULARIO DE REGISTRO</H2></B>
+                        </CEnter>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td bgcolor="#52a8ce"><b>Nombres:</b>
+                        <font color="red">*</font>
+                    </td>
+                    <td bgcolor="#fbfbfb"><b><input type="text" name="Nombres" placeholder="Nombre" minlength="5" maxlength="30" pattern="[A-Za-z]{4-16}"  required></b></td>
+                </tr>
+
+                <tr>
+                    <td bgcolor="#52a8ce"><b>Apellidos:</b>
+                        <font color="red">*</font>
+                    </td>
+                    <td bgcolor="#fbfbfb"><b><input type="text" name="Apellidos" placeholder="Apellidos" minlength="5" maxlength="30" pattern="[A-Za-z]{4-16}" required></b></td>
+                </tr>
+
+                <tr>
+                    <td bgcolor="#52a8ce"><b>Tipo de Identificacion:</b>
+                        <font color="red">*</font>
+                    </td>
+                    <td bgcolor="#fbfbfb"><select name="Tipos">
+                                <option value="1">Cedula de Ciudadania</option>
+                                <option value="2">Tarjeta de Identidad</option>
+                                <option value="3">Pasaporte</option>
+                                <option value="4">Otros</option>
+                            </select></td>
+                </tr>
+
+                <tr>
+                    <td bgcolor="#52a8ce"><b>Nro. Identificacíon:</b>
+                        <font color="red">*</font>
+                    </td>
+                    <td bgcolor="#fbfbfb"><b><input type="number" name="Nro" placeholder="Nro" minlength="5" maxlength="30" pattern="[0,9]{7-10}" title="solo se aceptan numeros" required></b></td>
+                </tr>
+
+                <tr>
+                    <td bgcolor="#52a8ce"><b>Genero:</b>
+                        <font color="red">*</font>
+                    </td>
+                    <td bgcolor="#fbfbfb"><b><input type="radio" name="genero"  value="Masculino" >Masculino</b>
+                        <b><input type="radio" name="genero"  value="Femenino" >Femenino</b></td>
+                </tr>
+
+                <tr>
+                    <td bgcolor="#52a8ce"><b>Telefono:</b>
+                        <font color="red">*</font>
+                    </td>
+                    <td bgcolor="#fbfbfb"><b><input type="number" name="Telefono" placeholder="Telefono" minlength="5" maxlength="7" pattern="[0,9]{7-8}" title="Soló se aceptan números" required></b></td>
+                </tr>
+
+                <tr>
+                    <td bgcolor="#52a8ce"><b>Celular:</b>
+                        <font color="red">*</font>
+                    </td>
+                    <td bgcolor="#fbfbfb"><b><input type="number" name="Celular" placeholder="Celular" minlength="5" maxlength="20" pattern="[0,9]{7-12}" title="solo se aceptan numeros" required></b></td>
+                </tr>
+
+                <tr>
+                    <td bgcolor="#52a8ce"><b>Departamento de Nac.:</b>
+                        <font color="red">*</font>
+                    </td>
+                    <td bgcolor="#fbfbfb"><b>
+                                        <select name="Departamentos" required>
+                                            <option value="0"></option>
+                                            <option value="1">Amazonas</option>
+                                            <option value="2">Antioquia</option>
+                                            <option value="3">Arauca</option>
+                                            <option value="4">Atlántico</option>
+                                            <option value="5">Bolívar</option>
+                                            <option value="6">Boyacá</option>
+                                            <option value="7">Caldas</option>
+                                            <option value="8">Caquetá</option>
+                                            <option value="9"> Nariño</option>
+                                            <option value="10">Cundinamarca</option>
+                                        </select></b></td>
+                </tr>
+
+                <tr>
+                    <td bgcolor="#52a8ce"><b>Ciudad de Nac.:</b>
+                        <font color="red">*</font>
+                    </td>
+                    <td bgcolor="#fbfbfb"><b>
+                                        <select name="Municipios" required >
+                                            <option value="0"></option>
+                                            <option value="1">Tunja</option>
+                                            <option value="2">Yopal</option>
+                                            <option value="3">Montería</option>
+                                            <option value="4">Puerto Inírida</option>
+                                            <option value="5">Neiva</option>
+                                            <option value="6">San José del Guaviare</option>
+                                            <option value="7">Riohacha</option>
+                                            <option value="8">Villavicencio</option>
+                                            <option value="9"> Pasto</option>
+                                            <option value="11">Bogotá</option>
+                                            <option value="12">Cartagena</option>
+                                            <option value="13">Popayán</option>
+                                            <option value="14">Manizales</option>
+                                            <option value="15">Mitú</option>
+                                            <option value="16">Cali</option>
+                                            <option value="17">Sincelejo</option>
+                                    </select></b></td>
+                </tr>
+
+                <tr>
+                    <td bgcolor="#52a8ce"><b>Correo Electronico:</b>
+                        <font color="red">*</font>
+                    </td>
+                    <td bgcolor="#fbfbfb"><b><input type="email" name="Correo" placeholder="email@" minlength="5" maxlength="30" id="email" pattern="[A-Za-z0-9 ]{4-16}" required></b></td>
+                </tr>
+
+                <tr>
+
+                    <td bgcolor="#52a8ce"><b>Contraseña:</b>
+                        <font color="red">*</font>
+                    </td>
+                    <td bgcolor="#fbfbfb"><b><input type="password" name="Contraseña" placeholder="password" minlength="5" maxlength="30" required ></td>
+                                
+                            </td>
+                        </tr>
+                               
+                        <tr>
+                            <td bgcolor= "#52a8ce"><b>Confirmar Contraseña:</b>
+                        <font color="red">*</font>
+                    </td>
+                    <td bgcolor="#fbfbfb"><b><input type="password" name="Confirmar"placeholder="Confirmar" minlength="5" maxlength="30" pattern="[A-Za-z0-9]{4-16}" required></b></td>
+                </tr>
+
+                <tr>
+                    <td bgcolor="#52a8ce"><b>Foto:</b>
+                        <font color="red">*</font>
+                    </td>
+                    <td bgcolor="#fbfbfb"><b><input type="text" name="foto"placeholder="Foto" minlength="5" maxlength="30" style="background:white !important;">
+                            <input name="arch" type="file" size="2mb" style="background:white !important;"></b><br></td>
+                </tr>
+                <td colspan="2"><br>
+                    <center>
+                        <input type="submit" value="Registrarme" style="background:#499fc5 !important;">
+                        <input type="submit" value="Borrar" style="background:#a2251c !important;">
+                    </center>
+
+                </td>
+
+                </tr><br>
+
+        </center>
+
+    </form>
+
+</body>
+
+</html>

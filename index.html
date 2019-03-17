@@ -1,0 +1,73 @@
+<html>
+
+<head>
+    <style>
+        input:valid {
+            border-color: #499fc5;
+        }
+        
+        input:invalid {
+            border-color: #a2251c;
+        }
+        
+        .logomazda {
+            height: 100px;
+            width: 100px;
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+        
+        .logomazda {
+            height: 100px;
+            width: 100px;
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+    </style>
+    <title>Mi Tienda</title>
+    <link rel="icon" type="image/ico" href="icons/logo2.png" />
+</head>
+
+<body bgcolor="#f0f0f0">
+    <div><img src="images/logo2.png" class="logomazda">
+    </div>
+    <center>
+        <h1>Bienvenidos a mi tienda</h1>
+    </center>
+    <form name="form2" action="validar.php" target="_BLANK" method="POST">
+        <center>
+            <table aling="center">
+                <tr>
+                    <tr>
+                        <td>
+                            <center><img src="icons/login.png" width="100px" height="40px"></center>
+                            <center>
+                                <h3><b>usuario</b></h3>
+                            </center>
+                            <center><input type="text" name="User" placeholder="user@email.com" minlength="5" maxlength="30" required></center>
+                            <center>
+                                <h3><b>contrase&ntilde;a</b></h3>
+                            </center>
+                            <center><input type="password" name="pass" placeholder="Password" minlength="4" maxlength="20" pattern="[A-Za-z0-9]{5,15}" required></center>
+                        </td>
+                    </tr>
+                </tr>
+                <tr>
+                    <td><br>
+                        <center><input type="submit" value="Iniciar sesion"></center><br>
+                        <center><a href="reset_pass.html">Olvide mi contraseña</a></center><br>
+                        <center>
+                            <a href="https://www.google.com/?hl=es_419" target="_BLANK"><img src="icons/search.png" width="50">&nbsp;
+                                <a href="https://twitter.com/?lang=es" target="_BLANK"><img src="icons/twitter.png" width="50">&nbsp;
+                                    <a href="https://www.facebook.com/" target="_BLANK"><img src="icons/facebook (1).png" width="50" </center>
+                    </td>
+                </tr>
+            </table>
+            </center>
+
+    </form>
+
+</body>
+
+</html>
+<!--mi comentario-->
